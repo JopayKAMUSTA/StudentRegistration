@@ -14,37 +14,108 @@
     <img src="../image/aces_logo_1-removebg-preview.png" class="logo">
     <h2>School Admin</h2>
 
-    <ul>
-        <li><i class="fa-solid fa-house"></i> <a href="/admin/adminDashboard.html">Dashboard</a></li>
-        <li class="active"><i class="fa-solid fa-users"></i> <a href="/admin/adminStudent.html">Student</a></li>
-        <li><i class="fa-solid fa-business-time"></i> Classes</li>
-        <li><i class="fa-solid fa-book-open"></i> Subjects</li>
-        <li><i class="fa-regular fa-calendar"></i> Attendance</li>
-        <li><i class="fa-solid fa-star"></i> Grades</li>
-        <li><i class="fa-solid fa-gear"></i> Settings</li>
+        <ul>
+      <a href="adminDashboard.html">  <li> <i class="fa-solid fa-house"></i>Dashboard</li></a>
+        <a href="adminStudent.html"><li class="active"> <i class="fa-solid fa-users"></i> Students</li></a>
+       <a href="adminSubject.html"> <li> <i class="fa-solid fa-book-open"></i> Subjects</li></a>
+        <a href="adminAttendance.html"> <li> <i class="fa-regular fa-calendar"></i>Attendance</li></a>
+      <a href="adminGrades.html">   <li> <i class="fa-solid fa-star"></i> Grades</li></a>
+        <a href="#"> <li> <i class="fa-solid fa-gear"></i>Settings</li></a>
     </ul>
 </div>
 
-    <div class="header">
-        <div>
-            <h1>Students</h1>
-            <div class="breadcrumb">
-                <span>Home</span>
-                <span>/</span>
-                <span>Students</span>
+<div class="main">
+
+       <div class="header">
+            
+            <div>
+                <h1>Students</h1>
+                <div class="breadcrumb">
+                    <span>Home</span>
+                    <span>/</span>
+                    <span>Students</span>
+                </div>
             </div>
-        </div>
 
-        <div class="header-right">
-            <i class="fa-solid fa-bell notification"></i>
+                <div class="header-right">
+                    <i class="fa-solid fa-bell notification"></i>
+                </div>
 
-            <div class="profile">
-                <img src="../image/profile.jpg" alt="">
-                <span>Admin</span>
+                <div class="profile">
+                    <img src="../image/prof.jpeg" alt="">
+                    <span>Admin</span>
+                    <i class="fa-solid fa-angle-down" style="color: rgb(0, 0, 0);"></i>
+                </div>
             </div>
-        </div>
-    </div>
 
+            <div class="table-section">
 
+                <div class="table-header">
+                    <h2>Student List</h2>
+
+                    <div class="table-action">
+                        <input type="text" placeholder="Search Student">
+                        <button class="add-btn">
+                              <i class="fa-solid fa-plus"></i> Add Student
+                        </button>
+                    </div>
+                </div>
+
+                <table>
+                    <tr>
+                        <th>#</th>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>Year</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>STU-1001</td>
+                        <td>Juan Dela Cruz</td>
+                        <td>BSIT</td>
+                        <td>1st Year</td>
+                            <td class="active-status">Active</td>
+                   <td class="actions">
+                    <i class="fa-solid fa-eye"></i>
+                    <i class="fa-solid fa-pen"></i>
+                    <i class="fa-solid fa-trash"></i>
+                    </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>STU-1002</td>
+                        <td>Maria Santos</td>
+                        <td>BSBA</td>
+                        <td>2nd Year</td>
+                            <td class="active-status">Active</td>
+                 <td class="actions">
+                    <i class="fa-solid fa-eye"></i>
+                    <i class="fa-solid fa-pen"></i>
+                    <i class="fa-solid fa-trash"></i>
+                 </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>STU-1003</td>
+                        <td>Carlos Reyes</td>
+                        <td>BSED</td>
+                        <td>3rd Year</td>
+                            <td class="pending-status">Pending</td>
+                <td class="actions">
+                    <i class="fa-solid fa-eye"></i>
+                    <i class="fa-solid fa-pen"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </td>
+                    </tr>
+                </table>
+            </div>
+
+</div>
 </body>
 </html>

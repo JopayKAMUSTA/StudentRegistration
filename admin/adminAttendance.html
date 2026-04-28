@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-Attendance</title>
+    <link rel="stylesheet" href="/css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="sidebar">
+    <img src="../image/aces_logo_1-removebg-preview.png" class="logo">
+    <h2>School Admin</h2>
+
+        <ul>
+      <a href="adminDashboard.html">  <li> <i class="fa-solid fa-house"></i>Dashboard</li></a>
+        <a href="adminStudent.html"><li> <i class="fa-solid fa-users"></i> Students</li></a>
+       <a href="adminSubject.html"> <li> <i class="fa-solid fa-book-open"></i> Subjects</li></a>
+        <a href="adminAttendance.html"> <li class="active"> <i class="fa-regular fa-calendar"></i>Attendance</li></a>
+      <a href="adminGrades.html">   <li> <i class="fa-solid fa-star"></i> Grades</li></a>
+        <a href="#"> <li> <i class="fa-solid fa-gear"></i>Settings</li></a>
+    </ul>
+</div>
+
+
+    <div class="main">
+
+       <div class="header">
+            
+            <div>
+                <h1>Attendance</h1>
+                <div class="breadcrumb">
+                    <span>Home</span>
+                    <span>/</span>
+                    <span>Attendance</span>
+                </div>
+            </div>
+
+                <div class="header-right">
+                    <i class="fa-solid fa-bell notification"></i>
+                </div>
+
+                <div class="profile">
+                    <img src="../image/prof.jpeg" alt="">
+                    <span>Admin</span>
+                    <i class="fa-solid fa-angle-down" style="color: rgb(0, 0, 0);"></i>
+                </div>
+            </div>
+
+
+            <div class="table-section">
+
+                <div class="table-header">
+                    <h3>Attendance Records</h3>
+                    <input type="text" placeholder="Search Student">
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Date</th>
+                            <th>Time In</th>
+                            <th>Time Out</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Juan Dela Cruz</td>
+                            <td>2026-04-29</td>
+                            <td>08:00 AM</td>
+                            <td>05:00 PM</td>
+                            <td>Present</td>
+                        </tr>
+
+                        <tr>
+                            <td>Maria Santos</td>
+                            <td>2026-04-29</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>Absent</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+    </div>
+
+</body>
+</html>

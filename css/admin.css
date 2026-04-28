@@ -217,3 +217,154 @@
       font-weight: bold;
      }
 
+     /* subject */
+
+     .form-section{
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+     }
+
+     .form-section h2{
+      margin-bottom: 15px;
+     }
+
+     .form-grid{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 15px;
+     }
+
+     .form-grid input,
+     .form-grid select{
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+     }
+
+     .form-grid input:focus,
+     .form-grid select:focus{
+      border-color: #22c55e;
+     }
+
+     .save-btn{
+      margin-top: 15px;
+      background: #22c55e;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.2s;
+     }
+
+     .save-btn:hover{
+      background: #16e34a;
+     }
+
+
+     /* Tablet */
+
+     @media (max-width: 1024px) {
+
+    .sidebar{
+        width: 180px;
+    }
+
+    .cards{
+        flex-wrap: wrap;
+    }
+
+    .card{
+        flex: 1 1 45%;
+    }
+
+    .notification{
+        right: 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    body{
+        flex-direction: column;
+    }
+
+    .sidebar{
+        width: 100%;
+        height: auto;
+        text-align: left;
+    }
+
+    .sidebar ul li{
+        justify-content: flex-start;
+    }
+
+    .main{
+        padding: 15px;
+    }
+
+    .header{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .header-right{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .notification{
+        right: 0;
+        font-size: 24px;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .table-header{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .table-action{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .table-action input{
+        width: 100%;
+    }
+
+    table{
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+
+    .profile span{
+        display: none;
+    }
+
+    .sidebar h2{
+        font-size: 18px;
+    }
+
+    .card h3{
+        font-size: 18px;
+    }
+}

@@ -10,20 +10,19 @@
     </head>
     <body>
         
-        <div class="sidebar">
-            <img src="../image/aces_logo_1-removebg-preview.png" alt="" class="logo">
-            <h2>School Admin</h2>
+       <div class="sidebar">
+    <img src="../image/aces_logo_1-removebg-preview.png" class="logo">
+    <h2>School Admin</h2>
 
-            <ul>
-                <li class="active"><i class="fa-solid fa-house" style="color: rgb(189, 189, 189);"></i> <a href="adminDashboard.html">Dashboard</a></li>
-                <li> <i class="fa-solid fa-users" style="color: rgb(189, 189, 189);"></i><a href="/admin/adminStudent.html">Students</a> </li>
-                <li><i class="fa-solid fa-business-time" style="color: rgb(189, 189, 189);"></i> Classes</li>
-                <li><i class="fa-solid fa-book-open" style="color: rgb(189, 189, 189);"></i> Subjects</li>
-                <li><i class="fa-regular fa-calendar" style="color: rgb(189, 189, 189);"></i> Attendance</li>
-                <li><i class="fa-solid fa-star" style="color: rgb(189, 189, 189);"></i> Grades</li>
-                <li><i class="fa-solid fa-gear" style="color: rgb(189, 189, 189);"></i> Settings</li>
-            </ul>
-        </div>
+    <ul>
+      <a href="adminDashboard.html">  <li class="active"> <i class="fa-solid fa-house"></i>Dashboard</li></a>
+        <a href="adminStudent.html"><li> <i class="fa-solid fa-users"></i> Students</li></a>
+       <a href="adminSubject.html"> <li> <i class="fa-solid fa-book-open"></i> Subjects</li></a>
+        <a href="adminAttendance.html"> <li> <i class="fa-regular fa-calendar"></i>Attendance</li></a>
+      <a href="adminGrades.html">   <li> <i class="fa-solid fa-star"></i> Grades</li></a>
+        <a href="#"> <li> <i class="fa-solid fa-gear"></i>Settings</li></a>
+    </ul>
+</div>
 
         <div class="main">
 
@@ -55,11 +54,7 @@
                     <h3>1,250</h3>
                     <p>Total Students</p>
                 </div>
-                <div class="card">
-                    <i class="fa-solid fa-book-bookmark" style="color: rgb(0, 0, 0);"></i>
-                    <h3>42</h3>
-                    <p>Active Classes</p>
-                </div>
+
                 <div class="card">
                     <i class="fa-solid fa-clipboard-check" style="color: rgb(0, 0, 0);"></i>
                     <h3>18</h3>
@@ -79,7 +74,7 @@
 
                 <div class="table-action">
         <input type="text" placeholder="Search..">
-       <button class="add-btn"> <i class="fa-solid fa-plus" style="color: rgb(0, 0, 0);"></i> Add Student</button>
+       <button class="add-btn"> <i class="fa-solid fa-plus"></i> Add Student</button>
      </div>   
     </div>        
         <table>
@@ -87,8 +82,8 @@
                         <th>#</th>
                         <th>ID</th>
                         <th>Name</th>
-                        <th>Grade</th>
-                        <th>Section</th>
+                        <th>Year</th>
+                        <th>Course</th>
                         <th>Status</th>
                         <th>Enrolled Date</th>
                         <th>Actions</th>
@@ -99,7 +94,7 @@
                         <td>STU-0001</td>
                         <td>Juan Dela Cruz</td>
                         <td>1st Year College</td>
-                        <td>A</td>
+                        <td>BSIT</td>
                         <td class="active-status">Active</td>
                         <td>May 10, 2026</td>
                         <td class="action">
@@ -115,7 +110,7 @@
                         <td>STU-0002</td>
                         <td>Carlos Reyes</td>
                         <td>2nd Year College</td>
-                        <td>A</td>
+                        <td>BSBA</td>
                         <td class="active-status">Active</td>
                         <td>May 11, 2026</td>
                           <td class=" action">
@@ -130,7 +125,7 @@
                         <td>STU-0003</td>
                         <td>Ana Garcia</td>
                         <td>3rd Year College</td>
-                        <td>C</td>
+                        <td>HRT</td>
                         <td class="pending-status">Pending </td>
                         <td>May 12, 2026</td>
                     <td class="action">
