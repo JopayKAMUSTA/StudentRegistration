@@ -1,0 +1,148 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bar-menu.css">
+</head>
+<style>
+    .banner{
+    max-width: 100%;
+    position: relative;
+}
+
+.banner img{
+    width: 100%;
+    height: 500px;
+    display: block;
+    object-fit: cover;
+}
+
+.banner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+.apply-section{
+    padding: 50px 10%;
+    background: #f5f5f5;
+}
+
+.title{
+    color: #cf002f;
+    margin-bottom: 30px;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card{
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3{
+    padding: 20px;
+    font-size: 18px;
+}
+
+.card-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #cf002f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.card-btn:hover{
+    background: #a00025;
+}
+</style>
+
+<body>
+    
+    <nav class="navbar">
+       <a href="../index.html"> <img src="../image/aces_logo_1-removebg-preview.png" alt="" class="logo"></a>
+
+        <div class="nav-right">
+            <a href="../login.html" class="login-btn">Login</a>
+            <a href="apply.html" class="apply-btn">Apply Now</a>
+        </div>
+</nav>
+
+<div class="banner">
+    <img src="../image/banner1.png" alt="">
+
+    <div class="banner-text">
+        <h2>Apply now to ACES TAGUM COLLEGE</h2>
+    </div>
+</div>
+
+<div class="apply-section">
+    <h2 class="title">I am applying for</h2>
+
+    <div class="card-container">
+        
+        <div class="card">
+            <img src="../image/EDU.png" alt="">
+            <h3>Online application for Senoir High School</h3>
+            <a href="OnlineApplicationforShs.html" class="card-btn">APPLY NOW</a>
+        </div>
+
+        <div class="card">
+            <img src="../image/HM.png" alt="">
+            <h3>Online application for College Freshmen </h3>
+            <a href="#" class="card-btn">APPLY NOW</a>
+        </div>
+
+        <div class="card">
+            <img src="../image/IT.png" alt="">
+            <h3>Online application for Scholarship Program</h3>
+            <a href="#" class="card-btn">APPLY NOW</a>
+        </div>
+
+        <div class="card">
+            <img src="../image/Teach.png" alt="">
+            <h3>Online application for Graduate Program</h3>
+            <a href="#" class="card-btn">APPLY NOW</a>
+        </div>
+
+    </div>
+</div>
+
+   <footer class="footer">
+        <p>© 2026 ACES Tagum College. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="css/bar-menu.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+
+    <nav class="navbar">
+        <img src="image/aces_logo_1-removebg-preview.png" alt="" class="logo">
+
+        <div class="nav-right">
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="enrolle/apply.html" class="apply-btn">Apply Now</a>
+            <div class="hamburger" id="hamburger">
+   <i class="fa-solid fa-bars" style="color: rgb(189, 189, 189);"></i>
+          </div>
+        </div>
+</nav>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="mega-menu" id="menu">
+
+        <div class="close-menu" id="closeMenu">
+            <i class="fa-solid fa-xmark" style="color: rgb(189, 189, 189);"></i>
+        </div>
+        
+        <div class="menu-left">
+            <ul>
+                <li class="active" data-target="about">About</li>
+                <li data-target="academics">Academics</li>
+                <li data-target="admissions">Admissions</li>
+                <li data-target="research">Research</li>
+                <li data-target="services">Services</li>
+            </ul>
+        </div>
+
+        <div class="menu-right">
+            
+            <div class="content active" id="about">
+                <h2>The University</h2>
+                <a href="#">HISTORY</a>
+                <a href="#">Vision and Mission</a>
+                <a href="#">Student Organization</a>
+            </div>
+
+            <div class="content" id="academics">
+                <h2>Programs</h2>
+                <a href="#">Engineering</a>
+                <a href="#">Information Technology</a>
+                <a href="#">Accounting</a>
+            </div>
+
+            <div class="content" id="admissions">
+                <h2>Apply</h2>
+                <a href="#">Requirements</a>
+                <a href="#">Scholarships</a>
+            </div>
+
+            <div class="content" id="research">
+                <h2>Research Area</h2>
+                <a href="#">AI</a>
+                <a href="#">Robotics</a>
+            </div>
+
+            <div class="content" id="services">
+                <h2>Services</h2>
+                <a href="#">Library</a>
+                <a href="#">Support</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="banner">
+        <div class="slider">
+
+            <div class="slides">
+               
+                <div class="slide active">
+                    <img src="image/IT.png">
+                    <div class="slide-content">
+                        <h2>Information Technology</h2>
+                        <p>Learn Computer Programming and Languages of coding</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="image/EDU.png">
+                    <div class="slide-content">
+                    <h2>Education</h2>
+                    <p>Teach,Learn,Explore the teaching skills</p>
+                </div>
+                </div>
+
+                 <div class="slide">
+                    <img src="image/HM.png">
+                    <div class="slide-content">
+                    <h2>Hospitality Management</h2>
+                    <p>Learn hotel operations and customer service.</p>
+                </div>
+                </div>
+
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+    </div>
+
+    <section class="program">
+        <h2>BE BUILT FOR THE WORLD AND FIND THE RIGHT PROGRAM FOR YOU</h2>
+    
+        <form class="select-degree">
+            <div class="custom-select">
+                <div class="select-btn" data-placeholder="Select Degree">
+                    <span>Select Degree</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <ul class="options">
+                    <li>Undergraduate</li>
+                    <li>Graduate</li>
+                    <li>Senior High</li>
+                </ul>
+            </div>
+
+            <div class="custom-select">
+                <div class="select-btn" data-placeholder="Select Study">
+                    <span>Area of Study</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <ul class="options">
+                    <li>Engineering</li>
+                    <li>IT</li>
+                    <li>Business</li>
+                </ul>
+            </div>
+
+            <div class="custom-select">
+                <div class="select-btn" data-placeholder="Select Location">
+                    <span>Select Location</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <ul class="options">
+                    <li>Manila</li>
+                    <li>Davao</li>
+                    <li>Cebu</li>
+                </ul>
+            </div>
+
+            <button type="button" class="find-btn">
+                Find Your Program
+            </button>
+
+        </form>
+    </section>
+    
+    <footer class="footer">
+        <p>© 2026 ACES Tagum College. All rights reserved.</p>
+    </footer>
+
+ <script src="script.js"></script>
+</body>
+</html>

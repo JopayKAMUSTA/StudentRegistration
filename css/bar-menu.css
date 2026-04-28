@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hamburger{
+    display: flex;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top:0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.overlay.active{
+    opacity: 1%;
+    pointer-events: all;
+}
+
+.close-menu{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 28px;
+    color: #333;
+    cursor: pointer;
+    z-index: 1001;
+    transition: 0.3s;
+}
+
+.close-menu:hover{
+    color: red;
+}
+.mega-menu{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    transition: 0.4s ease;
+    z-index: 1000;
+}
+
+.mega-menu.active{
+    right: 0;
+}
+
+.menu-left{
+    width: 30%;
+    background: linear-gradient(red,darkred);
+    color: white;
+    padding-top: 80px;
+}
+
+.menu-left ul{
+    list-style: none;
+    padding: 0;
+}
+
+.menu-left li{
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.menu-left li:hover,
+.menu-left li.active{
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.menu-right{
+    width: 70%;
+    background: #444;
+    color: white;
+    padding: 80px 40px;
+}
+
+.content{
+    display: none;
+}
+
+.content.active{
+    display: block;
+}
+
+.menu-right h2{
+    margin-bottom: 20px;
+}
+
+.menu-right a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-right a:hover{
+    text-decoration: underline;
+    color: skyblue;
+}

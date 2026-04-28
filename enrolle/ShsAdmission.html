@@ -1,0 +1,218 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shs-admission - applicant | Aces Tagum College</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: arial;
+    }
+
+     .banner{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.subtitle {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.steps p {
+    margin: 10px 0;
+}
+
+.notice {
+    background: #f9f9f9;
+    padding: 15px;
+    border-left: 4px solid red;
+    margin: 20px 0;
+}
+
+.radio-group label {
+    display: block;
+    margin: 5px 0;
+}
+
+.checkbox {
+    display: block;
+    margin: 15px 0;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+</style>
+<body>
+     <nav class="navbar">
+       <a href="../index.html"><img src="../image/aces_logo_1-removebg-preview.png" alt="" class="logo"></a>
+
+        <div class="nav-right">
+            <a href="../login.html" class="login-btn">Login</a>
+        </div>
+</nav>
+
+
+<div class="banner">
+    <img src="../image/banner1.png" alt="">
+</div>
+
+<div class="container">
+
+  
+    <h1>SENIOR HIGH SCHOOL</h1>
+    <p class="subtitle">INCOMING GRADE 11</p>
+
+ 
+    <p>Thank you for your interest in applying for admission!</p>
+
+  
+    <div class="steps">
+        <h2>Application Steps</h2>
+
+        <p><strong>STEP 1 APPLICATION:</strong> Completely accomplish the online application form.</p>
+
+        <p><strong>STEP 2 PAYMENT:</strong> Pay for the assessment fee.</p>
+
+        <p><strong>STEP 3 ASSESSMENT:</strong> Take the exam and get your result.</p>
+
+        <p><strong>STEP 4 RESERVATION:</strong> Pay reservation fee (₱5,000).</p>
+
+        <p><strong>STEP 5 ENROLLMENT:</strong> Complete your enrollment process.</p>
+    </div>
+
+ 
+    <div class="notice">
+        <p>We will collect your personal information for application purposes only.</p>
+    </div>
+
+
+    <h3>Select your status:</h3>
+    <div class="radio-group">
+        <label><input type="radio" name="status"> Grade 10 student</label>
+        <label><input type="radio" name="status"> Grade 10 completer</label>
+        <label><input type="radio" name="status"> ALS Graduate</label>
+        <label><input type="radio" name="status"> Studied abroad</label>
+    </div>
+
+    <label class="checkbox">
+        <input type="checkbox"> I agree to the terms and accuracy of information.
+    </label>
+
+
+    <h2>Personal Information</h2>
+
+    <form>
+        <div class="form-group">
+            <input type="text" placeholder="Last Name" required>
+            <input type="text" placeholder="First Name" required>
+        </div>
+
+        <div class="form-group">
+            <input type="text" placeholder="Middle Name">
+            <input type="text" placeholder="Suffix">
+        </div>
+
+        <div class="form-group">
+            <input type="date" required>
+            <select required>
+                <option value="">Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Facebook Username">
+        </div>
+
+
+        <h3>Mailing Address</h3>
+
+        <div class="form-group">
+            <input type="text" value="Philippines" readonly>
+            <input type="text" placeholder="Province" required>
+        </div>
+
+        <div class="form-group">
+            <input type="text" placeholder="City" required>
+            <input type="text" placeholder="Barangay" required>
+        </div>
+
+        <div class="form-group">
+            <input type="text" placeholder="House No." required>
+            <input type="text" placeholder="Street" required>
+        </div>
+
+        <div class="form-group">
+            <input type="text" placeholder="Zip Code" required>
+        </div>
+
+
+        <div class="form-group">
+            <input type="tel" placeholder="Mobile Number" required>
+        </div>
+
+       
+        <div class="form-group">
+            <input type="text" placeholder="Junior High School Name" required>
+        </div>
+
+        <button type="submit">CONTINUE</button>
+    </form>
+</div>
+
+
+  <footer class="footer">
+        <p>© 2026 ACES Tagum College. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

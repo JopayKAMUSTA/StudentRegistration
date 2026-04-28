@@ -1,0 +1,146 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>School-Admin</title>
+            <link rel="stylesheet" href="../css/admin.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+    </head>
+    <body>
+        
+        <div class="sidebar">
+            <img src="../image/aces_logo_1-removebg-preview.png" alt="" class="logo">
+            <h2>School Admin</h2>
+
+            <ul>
+                <li class="active"><i class="fa-solid fa-house" style="color: rgb(189, 189, 189);"></i> <a href="adminDashboard.html">Dashboard</a></li>
+                <li> <i class="fa-solid fa-users" style="color: rgb(189, 189, 189);"></i><a href="/admin/adminStudent.html">Students</a> </li>
+                <li><i class="fa-solid fa-business-time" style="color: rgb(189, 189, 189);"></i> Classes</li>
+                <li><i class="fa-solid fa-book-open" style="color: rgb(189, 189, 189);"></i> Subjects</li>
+                <li><i class="fa-regular fa-calendar" style="color: rgb(189, 189, 189);"></i> Attendance</li>
+                <li><i class="fa-solid fa-star" style="color: rgb(189, 189, 189);"></i> Grades</li>
+                <li><i class="fa-solid fa-gear" style="color: rgb(189, 189, 189);"></i> Settings</li>
+            </ul>
+        </div>
+
+        <div class="main">
+
+            <div class="header">
+            
+            <div>
+                <h1>Dashboard</h1>
+                <div class="breadcrumb">
+                    <span>Home</span>
+                    <span>/</span>
+                    <span>Dashboard</span>
+                </div>
+            </div>
+
+                <div class="header-right">
+                    <i class="fa-solid fa-bell notification"></i>
+                </div>
+
+                <div class="profile">
+                    <img src="../image/prof.jpeg" alt="">
+                    <span>Admin</span>
+                    <i class="fa-solid fa-angle-down" style="color: rgb(0, 0, 0);"></i>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <i class="fa-solid fa-users" style="color: rgb(0, 0, 0);"></i>
+                    <h3>1,250</h3>
+                    <p>Total Students</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-book-bookmark" style="color: rgb(0, 0, 0);"></i>
+                    <h3>42</h3>
+                    <p>Active Classes</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-clipboard-check" style="color: rgb(0, 0, 0);"></i>
+                    <h3>18</h3>
+                    <p>Subjects</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-user-plus" style="color: rgb(0, 0, 0);"></i>
+                    <h3>24</h3>
+                    <p>Pending Enrollment</p>
+                </div>
+            </div>
+
+            <div class="table-section">
+                
+                <div class="table-header">
+                <h2>Recent Student Registration</h2>
+
+                <div class="table-action">
+        <input type="text" placeholder="Search..">
+       <button class="add-btn"> <i class="fa-solid fa-plus" style="color: rgb(0, 0, 0);"></i> Add Student</button>
+     </div>   
+    </div>        
+        <table>
+                    <tr>
+                        <th>#</th>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Grade</th>
+                        <th>Section</th>
+                        <th>Status</th>
+                        <th>Enrolled Date</th>
+                        <th>Actions</th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>STU-0001</td>
+                        <td>Juan Dela Cruz</td>
+                        <td>1st Year College</td>
+                        <td>A</td>
+                        <td class="active-status">Active</td>
+                        <td>May 10, 2026</td>
+                        <td class="action">
+                            <i class="fa-solid fa-eye" style="color: rgb(0, 0, 0);"></i>
+                        <i class="fa-solid fa-pencil" style="color: rgb(0, 0, 0);"></i>
+                         <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>STU-0002</td>
+                        <td>Carlos Reyes</td>
+                        <td>2nd Year College</td>
+                        <td>A</td>
+                        <td class="active-status">Active</td>
+                        <td>May 11, 2026</td>
+                          <td class=" action">
+                            <i class="fa-solid fa-eye" style="color: rgb(0, 0, 0);"></i>
+                        <i class="fa-solid fa-pencil" style="color: rgb(0, 0, 0);"></i>
+                         <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>STU-0003</td>
+                        <td>Ana Garcia</td>
+                        <td>3rd Year College</td>
+                        <td>C</td>
+                        <td class="pending-status">Pending </td>
+                        <td>May 12, 2026</td>
+                    <td class="action">
+                        <i class="fa-solid fa-eye" style="color: rgb(0, 0, 0);"></i>
+                        <i class="fa-solid fa-pencil" style="color: rgb(0, 0, 0);"></i>
+                         <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+    </html>
